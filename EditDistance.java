@@ -8,7 +8,9 @@
 class Solution {
     public int minDistance(String word1, String word2) {
         // Base Case
-
+        if (word1.equals(word2)) {
+            return 0;
+        }
         int m = word1.length();
         int n = word2.length();
         // Dp matrix of length + 1 bcoz we have empty strings at start
